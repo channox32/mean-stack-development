@@ -1,0 +1,91 @@
+    <!-- Content -->
+    <div class="top-content">
+      <div class="inner-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text">
+              <a class="logo" href="index.html"></a>
+              <h1><a class="btn btn-link-1 launch-modal" data-ng-click="user.launchModal('#modal-register')" href="javascript:void(0)" data-modal-id="modal-register"><strong>Register</strong></a> | <a class="btn btn-link-1 launch-modal" data-ng-click="user.launchModal('#modal-login')" href="javascript:void(0)" data-modal-id="modal-login"><strong>Login</strong></a></h1>
+              <div class="description">
+                <p>
+                  This is a free responsive modal registration form made with Bootstrap.
+                  Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>, customize and use it as you like!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MODAL Register -->
+    <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h3 class="modal-title" id="modal-register-label">Sign up now</h3>
+            <p>Fill in the form below to get instant access:</p>
+          </div>
+          
+          <div class="modal-body" >
+            <form role="form" data-ng-submit="user.register('modal-register')" method="post" class="registration-form" >
+              <div class="form-group">
+                <label class="sr-only" for="form-first-name">First name</label>
+                <input type="text" name="form-first-name" data-ng-model="user.registration.firstname" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="form-last-name">Last name</label>
+                <input type="text" name="form-last-name" data-ng-model="user.registration.lastname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" >Choose Username</label>
+                <input type="text" data-ng-model="user.registration.username" placeholder="Choose Username" class="form-email form-control">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" >Choose Password</label>
+                <input type="password" data-ng-model="user.registration.password" placeholder="Choose Password" class="form-email form-control">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" >Re-Enter Password</label>
+                <input type="password" data-ng-model="user.registration.re_password" placeholder="Re-Enter Password" class="form-email form-control">
+              </div>
+              <button type="submit" class="btn" data-ng-disabled="user.invalid">Sign me up!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Login -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h3 class="modal-title" id="modal-register-label">Sign In</h3>
+          </div>
+          
+          <div class="modal-body" >
+            <form role="form" data-ng-submit="user.login('modal-login')" method="post" class="registration-form">
+              <div class="form-group">
+                <label class="sr-only" for="form-first-name">Username</label>
+                <input type="text" data-ng-model="user.loginData.username" name="form-first-name" placeholder="Username" class="form-first-name form-control" id="form-first-name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="form-last-name">Password</label>
+                <input type="password" data-ng-model="user.loginData.password"name="form-last-name" placeholder="Password" class="form-last-name form-control" id="form-last-name">
+              </div>
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

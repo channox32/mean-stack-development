@@ -1,0 +1,12 @@
+{
+  "name": "Todo_List_Application",
+  "author": "Christian Rey Flores",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "crypto-md5": "^1.0.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.6",
+    "passport": "^0.2.1"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-ng-app="Todo">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple login form</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+ </head>
+
+<body>
+<div class="container" data-ng-controller="LoginController as login">
+  <br/><br/>
+  <div class="login">
+  	<h1 class="login-heading">
+      <strong>Welcome.</strong> Please login.</h1>
+      <form method="post" data-ng-submit="login.login()">
+        <input type="text" name="user" data-ng-model="login.userData.username" placeholder="Username" required="required" class="input-txt" />
+          <input type="password" name="password" data-ng-model="login.userData.password" placeholder="Password" required="required" class="input-txt" />
+          <div class="login-footer">
+             <a href="#" class="lnk">
+              <span class="icon icon--min">ಠ╭╮ಠ</span> 
+              Forgot Password ?
+            </a>&emsp;
+             <a href="#" class="lnk">
+              <strong>Create an account</strong>
+            </a>
+            <button type="submit" class="btn btn--right">Sign in</button>
+          </div>
+      </form>
+  </div>
+</div>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/lib/angularjs/angular.min.js"></script>
+  <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="controllers/login.js"></script>
+  </body>
+</html>

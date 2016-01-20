@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Todo">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To do List App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="externals/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="externals/css/form-elements.css">
+    <link rel="stylesheet" href="externals/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="spinner-container">
+    </div>
+    <div data-ng-view></div>
+    <!-- Javascript -->
+    <script src="externals/js/jquery-1.11.1.min.js"></script>
+    <script src="externals/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="externals/js/jquery.backstretch.min.js"></script>
+    <script src="externals/js/scripts.js"></script>
+    <script src="externals/js/spinner.js"></script>
+    <!-- Dependencies -->
+    <script src="externals/lib/angularjs/angular.min.js"></script>
+    <script src="externals/lib/angularjs/angular-route.min.js"></script>
+    
+    <!-- Front-end Scripts -->
+    <script src="app.js"></script>
+    <script src="services/User.js"></script>
+    <script src="services/Auth.js"></script>
+    <script src="controllers/user.js"></script>
+    <!--[if lt IE 10]>
+    <script src="assets/js/placeholder.js"></script>
+    <![endif]-->
+  </body>
+</html>
